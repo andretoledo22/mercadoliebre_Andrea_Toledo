@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+  /* Estilo para el contenedor principal del formulario */
+  form {
+    background-color: #ebebeb;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);   
+  }
+
+  /* Estilo para los contenedores de los campos de entrada */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para los campos de entrada de texto */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para los campos de radio */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para el botón de envío */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón de reinicio */
+  button[type="reset"] {
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para las etiquetas */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo para el mensaje de error */
+  input:invalid {
+    border-color: #ff0000;
+  }
+
+  /* MD2 */
+main.login form button {
+  transition: color, background-color 300ms;
+}
+
+main.login form button:hover {
+  background-color: #0022AA;
+  color: #ffffff;
+}
+/* End MD2 */
+  

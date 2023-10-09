@@ -1,0 +1,368 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .main-header {
+    background-color:#EAC926;
+    color: #666;
+    /*padding: 5%;*/
+  }
+
+  header div.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  div.main-header article.logo-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header div.logo {
+    width: 50%;
+   }
+
+  article.logo-form div.form {
+    display: flex;
+    background-color: #fff;
+    color: #666;
+    border-radius: 5px;
+    align-items: center;
+    width: 50%;
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  article.logo-form div.form div.input {
+    width: 80%;
+  }
+
+  /*article.logo-form div.form div.submit {
+    width: 20%;
+  }*/
+
+  div.main-header p.buy {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  header div.main-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  header nav {
+    font-size: 12px;
+  }
+
+  header nav ul li {
+    list-style-type: none;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: #666;   
+    width: 100%; 
+  }
+
+  div.burger-menu {
+    text-align: center;
+  }
+
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+  }
+
+  section.banner img {
+    width: 100%;
+  }
+
+  main {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+  }
+
+  .product-desc-box {
+    position: relative;
+    }
+
+  .price {
+    font-size: 18px;
+    width: 30%;
+  }
+
+  .discount {
+    width: 70%;
+  }
+  
+  .discount,
+  .description {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  h3,
+  .description {
+    color: #666;
+  }
+   
+  main section article {
+    background-color: #fff;
+  }
+  
+  main section article img {
+    width: 100%;
+  }
+  
+  main section article i,
+  .discount {
+    color: #39b54a;
+  }
+
+  article.product {
+    margin: 10px;
+  }
+
+  article.product div.product-desc-box {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  div.product-desc-box .description {
+    display: none;
+  }
+
+  article.product div.product-desc-box p.price {
+    width: 30%;
+  }
+
+  article.product div.product-desc-box p.discount {
+    width: 70%;
+  }
+
+  header div.main-header nav ul li a {
+    display: none;
+  }
+
+  main section.last-visit,
+  section.offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.products-container  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /*Start Footer*/
+
+  footer div.section-footer {
+    text-align: center;
+    margin: 40px;
+  }
+
+  footer div.section-footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+  }
+
+  footer div.section-footer h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  footer div.section-footer p {
+    text-align: center;
+    margin-top: 0;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }  
+
+  /* TABLETS */   
+  @media (min-width: 481px) {
+    
+  }
+
+   /* COMPUS */  
+  @media (min-width: 769px) {
+    div.product-desc-box .description {
+      display: initial;
+    }
+
+    div.products-container article.product {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    div.products-container article.product div.product-desc-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    div.products-container article.product div.product-desc-box h4.description {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    header div.main-header nav ul li a {
+      display: flex;
+    }
+
+    header div.main-header div.burger-menu {
+      display: none;
+    }
+
+    div.products-container article.product {
+      width: 45%;
+    }
+
+    div.main-header article.logo-form  {
+      width: 65%;
+      display: flex;
+     }
+     
+    div.main-header p.buy {
+      width: 35%;
+    }
+
+    article.logo-form div.form div.input {
+      width: 90%;
+      border: 1px solid #666;     
+    }
+
+    article.logo-form div.form div.submit {
+      width: 10%;
+      border: 1px solid #666;
+      text-align: center;
+    }
+
+    div.main-header {
+      align-items: center;
+    }
+
+    div.main-header nav{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 20px 0 10px 0px;
+     }
+    
+    div.main-header nav ul  {
+      display: flex;
+      justify-content: space-around;
+      width: 35%;
+     }
+
+     /* MD1-1 */
+     article.product div.product-desc-box .description {
+      position: relative;
+      opacity: 0;
+      transition: opacity 300ms;
+     }
+
+     article.product div.product-desc-box:hover .description {
+      opacity: 1;
+     }
+      /* End MD1-1 */   
+  }
+
+    /* MD1-2 */
+    @media (min-width: 1280px) { 
+
+      div.products-container article.product {
+        width: 22%;
+        box-shadow: none;
+        transition: box-shadow 300ms;
+        cursor: pointer;
+      }
+
+    
+      div.products-container article.product:hover {
+          box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+        /* End MD1-2 */
+
+         /* MD1-3 */
+      article.product div.product-desc-box i.product-delivery-icon {
+        transition: transform 300ms;
+      }
+
+      article.product div.product-desc-box:hover i.product-delivery-icon {
+        transform: rotate(-90deg);
+      }
+        /* End MD1-3 */
+
+      footer {
+        display: flex;
+        width: 100%;
+      }
+
+      footer section div {
+        width: 100%;
+      }
+
+
+
+
+    }
+
+  
