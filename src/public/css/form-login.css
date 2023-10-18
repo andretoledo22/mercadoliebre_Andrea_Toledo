@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: aliceblue;
+  }
+
+  main {
+    height: 90%;
+  }
+
+
+  /* Estilo para el contenedor principal del formulario */
+  main form {
+    background-color: #ebebeb;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);   
+  }
+
+  /* Estilo para los contenedores de los campos de entrada */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para los campos de entrada de texto */
+  main form.login
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+ /* Estilo para el botón de envío */
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 15px auto;
+    }
+
+      /* MD2 */
+  main form button {
+    margin: 10px;
+    transition: color, background-color 300ms;
+  }
+
+  main form button:hover {
+    background-color: #0022AA;
+    color: #ffffff;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    main form.login {
+        width: 500px;
+        margin-top: 60px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    main form.login {
+        width: 650px;
+        margin-top: 60px;
+      }    
+  }

@@ -35,15 +35,15 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin: 15px;
   }
 
   header div.logo {
     width: 50%;
    }
 
-  article.logo-form div.form {
+  article.logo-form form {
     display: flex;
-    background-color: #fff;
     color: #666;
     border-radius: 5px;
     align-items: center;
@@ -52,14 +52,6 @@
     justify-content: center;
   }
   
-  article.logo-form div.form div.input {
-    width: 80%;
-  }
-
-  /*article.logo-form div.form div.submit {
-    width: 20%;
-  }*/
-
   div.main-header p.buy {
     text-align: center;
     margin-bottom: 10px;
@@ -146,6 +138,10 @@
   .description {
     color: #666;
   }
+
+  .description {
+    margin: 10px 0 10px 0;
+  }
    
   main section article {
     background-color: #fff;
@@ -193,7 +189,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+  }
+
+  main section h3.title-section-card {
+    margin: 15px;
   }
 
   div.products-container  {
@@ -214,6 +213,11 @@
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: color, background-color 300ms;
+  }
+
+  footer div.section-footer i:hover {
+    color: orange;
   }
 
   footer div.section-footer h3 {
@@ -228,23 +232,13 @@
     font-size: 12px;
   }
 
-  .footer-title {
-    text-align: center;
-  }
-
-  .copyright {
-    text-align: center;
+  footer div p.copyright {
     padding: 20px;
     color: #666;
   }  
 
-  /* TABLETS */   
-  @media (min-width: 481px) {
-    
-  }
-
    /* COMPUS */  
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     div.product-desc-box .description {
       display: initial;
     }
@@ -253,14 +247,13 @@
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    div.products-container article.product {
+      width: 45%;
+    }
+
     div.products-container article.product div.product-desc-box {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    div.products-container article.product div.product-desc-box h4.description {
-      width: 100%;
-      margin-top: 18px;
     }
 
     header div.main-header nav ul li a {
@@ -271,28 +264,14 @@
       display: none;
     }
 
-    div.products-container article.product {
-      width: 45%;
-    }
-
     div.main-header article.logo-form  {
-      width: 65%;
+      width: 60%;
       display: flex;
+      justify-content: space-around;
      }
      
     div.main-header p.buy {
       width: 35%;
-    }
-
-    article.logo-form div.form div.input {
-      width: 90%;
-      border: 1px solid #666;     
-    }
-
-    article.logo-form div.form div.submit {
-      width: 10%;
-      border: 1px solid #666;
-      text-align: center;
     }
 
     div.main-header {
@@ -335,7 +314,6 @@
         cursor: pointer;
       }
 
-    
       div.products-container article.product:hover {
           box-shadow: 0px 0px 10px rgb(100, 100, 100);
       }
@@ -351,17 +329,15 @@
       }
         /* End MD1-3 */
 
-      footer {
+      footer div.container-information {
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
-      footer section div {
-        width: 100%;
+      footer div.section-footer {
+        width: 25%;
       }
-
-
-
 
     }
 

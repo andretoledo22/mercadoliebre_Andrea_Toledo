@@ -6,14 +6,13 @@
 
   body {
     font-family: "Roboto", sans-serif;
-    
   }
 
   /* Estilo para el contenedor principal del formulario */
-  form {
+  main form.main-form {
     background-color: #ebebeb;
-    max-width: 360px;
-    margin: 0 auto;
+    width: 350px;
+    margin: auto;
     padding: 20px;
     font-size: 17px;
     border-radius: 10px;
@@ -26,6 +25,7 @@
   }
   
   /* Estilo para los campos de entrada de texto */
+  main form div
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -67,23 +67,64 @@
   /* Estilo para las etiquetas */
   label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
   }
-  
-  /* Estilo para el mensaje de error */
-  input:invalid {
-    border-color: #ff0000;
+
+  main form div.profile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main form div.profile h4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  main form div.profile input, label {
+    margin: 15px;
+  }
+
+  main form div.interests h4 {
+    margin-bottom: 10px;
+  }
+
+  main form div.interests div {
+    display: flex;
+  }
+
+  main form div.user-photo h4 {
+    margin-bottom: 15px 0 15px 0;
+  }
+
+  main form div.user-photo input {
+    margin: 20px 0 15px 0;;
+  }
+
+  main form div.send-cancel {
+    display: flex;
+    justify-content: center;
   }
 
   /* MD2 */
-main.login form button {
-  transition: color, background-color 300ms;
-}
+  main form div.send-cancel button {
+    margin: 10px;
+    transition: color, background-color 300ms;
+  }
 
-main.login form button:hover {
-  background-color: #0022AA;
-  color: #ffffff;
-}
+  main form div.send-cancel button:hover {
+    background-color: #0022AA;
+    color: #ffffff;
+  }
 /* End MD2 */
   
+  @media (min-width: 768px) {
+    main form.main-form {
+      width: 600px;
+    }
+   }
+
+  @media (min-width: 1280px) {
+    main form.main-form {
+      width: 750px;
+    }        
+  }
